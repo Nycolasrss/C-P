@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+@theme {
+    --font-h1: "Honk", system-ui;
+}
