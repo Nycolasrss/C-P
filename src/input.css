@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 @theme {
-    --font-h1: "Honk", system-ui;
+    --font-h1: "Concert One", sans-serif;
 }
