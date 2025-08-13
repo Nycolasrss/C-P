@@ -11,7 +11,7 @@
   <title>Crochezito</title>
 </head>
 <body>
-  <header class="bg-amber-200 p-9">
+  <header class="bg-amber-200 p-9 fixed top-0  backdrop-blur-sm shadow-lg left-0 w-full">
     <nav class="container  top-0 w-full mx-auto flex justify-between  items-center">
         <a href="#" class="text-2xl font-h1">C R O C H E Z I T O</a>
         <ul class="flex gap-2 font-h1 text-2xl">
@@ -21,14 +21,31 @@
         </ul>
     </nav>
   </header>
-  
-    <section class="bg-cover bg-center h-96 flex items-center justify-center text-white" style="background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2plMG1wOTBsM3B1a2FmbWJqMHV5dnB5Y3VqOXN1dGFheXhrM2hidCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/nsTDJ3r87HvDiyhL6m/giphy.gif)">
-        <div class="text-center">
-            <h1 class="text-5xl font-h1 mb-4">Arte em Fios</h1>
-            <p class="text-xl">Peças únicas feitas à mão com amor.</p>
-            <a href="#" class="mt-8 inline-block text-blue-800 font-bold py-2 px-6 rounded-full ">🩷 🩷 🩷 🩷 🩷 🩷</a>
+
+      <section class="flex items-center justify-center min-h-screen bg-amber-200 p-8">
+        
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
+            
+            <div class="w-full md:w-1/2 flex justify-center md:justify-end pr-0 md:pr-16">
+                <img src="https://via.placeholder.com/200" alt="Logo crochezzito" class="max-w-xs md:max-w-sm lg:max-w-md">
+            </div>
+
+            <div class="w-full md:w-1/2 text-center md:text-left pl-0 md:pl-16">
+                <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                    Peças feitas à mão com muito carinho <br class="hidden sm:inline">
+                </h1>
+                <p class="mt-4 text-lg lg:text-xl text-gray-600">
+                    
+                </p>
+                <button class="mt-8 px-8 py-3 bg-amber-600 text-white font-semibold rounded-full hover:bg-amber-400 transition duration-300">
+                    Instagram da loja
+                </button>
+            </div>
         </div>
-    </section>
+
+      </section>
+  
+   
     <section class="container mx-auto py-12">
       <h2 class="text-5xl font-h1 text-amber-700 text-center mb-8">Feitos sob encomenda</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -91,12 +108,12 @@
       <div class="flex  items-center justify-center flex-col">
         <div class=" transition-opacity opacity-0 group-focus-within:opacity-100 bg-gradient-to-tr from-[#4158d0] via-[#c850c0] to-[#ffcc70] rounded-lg h-10 bluer-lg "></div>
         <div class="relative -top-[2.5rem] p-[5px] bg-none focus-within:bg-gradient-to-tr from-[#4158d0] via-[#c850c0] to-[#ffcc70] rounded-lg ">
-        <input id="pedido" type="text" id="pedidoInput" name="pedido" placeholder="Faça seu pedido aqui" class="h-10 p-2 rounded-lg font-h1 outline-none appearance-none bg-white">
+        <input id="pedidoInput" type="text" name="pedido" placeholder="Faça seu pedido aqui" class="h-10 p-2 rounded-lg font-h1 outline-none appearance-none bg-white">
       </div> 
       </div>
       <div>
         <div class="flex  items-center justify-center flex-col">
-        <button type="submit" class="bg-amber-500 hover:bg-amber-600 text-white font-mono px-4 rounded-md transition-colors duration-200">
+        <button  id="enviarBtn" type="submit" class="bg-amber-500 hover:bg-amber-600 text-white font-mono px-4 rounded-md transition-colors duration-200">
           Enviar Pedido
         </button>
         </div>
