@@ -17,3 +17,5 @@ enviarBtn.addEventListener('click', () => {
     alert('Por favor, digite uma mensagem antes de enviar.');
   }
 });
+
+ScrollReveal().reveal('.logo');
