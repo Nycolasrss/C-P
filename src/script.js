@@ -18,4 +18,27 @@ enviarBtn.addEventListener('click', () => {
   }
 });
 
-ScrollReveal().reveal('.logo');
+ScrollReveal().reveal('.logo',{
+  origin:'left',
+  distance:'100px',
+  duration: 2000,
+  easnig:'ease-in-out',
+});
+ScrollReveal().reveal('.entrada',{
+  origin:'right',
+  distance:'200px',
+  duration:1900,
+  easnig:'ease-in-out',
+});
+ScrollReveal().reveal('.introducao',{
+  origin:'right',
+  distance:'200px',
+  duration:1600,
+  easnig:'ease-in-out',
+  });
+ScrollReveal().reveal('.cabecalho',{
+  origin:'top',
+  distance:'200px',
+  duration:3000,
+  easnig:'ease-in-out',
+  });
